@@ -10,10 +10,10 @@ jobs:
 
     steps:
       - name: Checa o repositorio
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
   
       - name: Configura GitHub Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v3
   
       - name: Cria os arquivos para Deploy
         uses: actions/upload-pages-artifact@v3
@@ -21,4 +21,4 @@ jobs:
           path: .
   
       - name: Publica no GitPages
-        uses: actions/github-pages-deploy-action@v4.3.2
+        uses: JamesIves/github-pages-deploy-action@v4
